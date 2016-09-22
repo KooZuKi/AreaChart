@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="author" content="Patrick Chen">
+<meta name="Web App" content="Area Chart">
+<title>Problem set 1</title>
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="labelBtm">
+				<div class="labelA span2">A</div>
+				<div class="labelB span2">B</div>
+				<div class="labelC span2">C</div>
+				<div class="labelD span2">D</div>
+				<div class="labelE span2">E</div>
+			</div>
+			<div class="calendar-wrapper">
+				<div class="row">
+					<div class="col-sm-4">
+						<button id="btnPrev" type="button"></button>
+					</div>
+					<div class="col-sm-4 date">
+						<div id="divCal">Area Chart</div>
+
+					</div>
+					<div class="col-sm-4">
+						<button id="btnNext" type="button"></button>
+					</div>
+				</div>
+				<div id="weatherDataChart"></div>
+			</div>
+			<div class="bargraph">
+				<ul class="bars">
+					<li class="bar1"></li>
+					<li class="bar2"></li>
+					<li class="bar3"></li>
+					<li class="bar4"></li>
+					<li class="bar5"></li>
+				</ul>
+				<div class="convertBtn">
+					<input type="button" id="convert" value="F/C"><span>Area Chart</span>
+				</div>
+				<ul class="y-axis" id="weatherDataList"></ul>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- JS library for chart -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
+	<!-- End JS library for chart -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
